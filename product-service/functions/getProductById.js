@@ -11,7 +11,7 @@ module.exports.getProductById = async (event) => {
 
     const selectProductResult = await client.query(
       `
-        select * from products
+        select * from products LEFT JOIN stocks ON products.id = stocks.product_id
           where id = '${productId}'
       `
     );

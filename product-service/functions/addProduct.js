@@ -7,7 +7,7 @@ module.exports.addProduct = async (event) => {
   await client.connect();
 
   try {
-    const payload = event.body;
+    const payload = JSON.parse(event.body);
     const { title, description, price, count } = payload;
 
     await client.query(
