@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.137.0",
+    "@aws-sdk/s3-request-presigner": "^3.137.0",
+    "aws-sdk": "^2.1185.0",
+    "csv-parser": "^3.0.0"
+  }
+}
